@@ -6,7 +6,7 @@ import { lookupMethod } from "./method-registry";
 import { rpcGetAccountBalance } from "./rpc";
 
 const api: AxiosInstance = axios.create({
-  baseURL: "https://blockscout.com/",
+  baseURL: "https://seitrace.com/?chain=pacific-1",
   timeout: 30000, // 30 secs
   headers: {
     Accept: "application/json",
@@ -279,8 +279,8 @@ export async function apiGetAccountTransactions(
 
       if (!matchingTx) {
         const asset: IAssetData = {
-          symbol: "ETH",
-          name: "Ethereum",
+          symbol: "SEI",
+          name: "Sei Network",
           decimals: "18",
           contractAddress: "",
         };
