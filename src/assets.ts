@@ -7,16 +7,9 @@ export const ETH: IAssetData = {
   contractAddress: "",
 };
 
-export const RSK: IAssetData = {
-  symbol: "RSK",
-  name: "RSK",
-  decimals: "18",
-  contractAddress: "",
-};
-
-export const POA: IAssetData = {
-  symbol: "POA",
-  name: "POA",
+export const SEI: IAssetData = {
+  symbol: "SEI",
+  name: "Sei",
   decimals: "18",
   contractAddress: "",
 };
@@ -24,20 +17,6 @@ export const POA: IAssetData = {
 export const xDAI: IAssetData = {
   symbol: "xDAI",
   name: "xDAI",
-  decimals: "18",
-  contractAddress: "",
-};
-
-export const MATIC: IAssetData = {
-  symbol: "MATIC",
-  name: "Matic",
-  decimals: "18",
-  contractAddress: "",
-};
-
-export const CLO: IAssetData = {
-  symbol: "CLO",
-  name: "CLO",
   decimals: "18",
   contractAddress: "",
 };
