@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 
 const api: AxiosInstance = axios.create({
-  baseURL: "https://api.opensea.io/api/v1",
+  baseURL: "https://api.pallet.exchange/api/v2/nfts",
   timeout: 30000, // 30 secs
   headers: {
     Accept: "application/json",
