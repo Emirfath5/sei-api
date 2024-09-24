@@ -35,7 +35,7 @@ function parseSignature(signature: string) {
 }
 
 const registryMap = {
-  "1": "0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86",
+  "1": "0x80ADdcB73bCc659bc55778D409E70435BFA910dC",
 };
 
 export const lookupMethod = async (methodHash: string): Promise<IMethod | null> => {
@@ -68,12 +68,12 @@ export const lookupMethod = async (methodHash: string): Promise<IMethod | null> 
 
       result = { signature, ...parsed };
     }
-  } else {
+  //} else {
     const response = await axios.get(
       `https://raw.githubusercontent.com/ethereum-lists/4bytes/master/signatures/${removeHexPrefix(
         methodHash,
       )}`,
-    );
+    //);
 
     if (response.data) {
       const signature = response.data.trim();
